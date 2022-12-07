@@ -1,0 +1,23 @@
+1. What tech stack will you use for your final project?
+  - React and Node
+  
+2. Is the front-end UI or back-end UI going to be the focus of your project? Or are you going to make an evenly focused full-stack application?
+  - I plan on it being an evenly focused full-stack application. 
+  
+3. Will this be a website? A mobile app?
+  - A website.
+  
+4. What goal will your project be designed to achieve?
+  - An easy and efficient way to create a todo list and learn new facts while doing it. 
+  
+5. What kind of users will visit your app?
+  - People who want to be productive and get things done and also love trivia. 
+  
+6. What data do you plan on using? 
+  - I will be using data from the Facts API. 
+  
+7. Outline your approach to creating your project. 
+  - The database I am using will be for the trivia part of the website. 
+  - You will be able to sign into the website and have your todos saved. You will be able to delete and update todos.
+  - On the homepage there will be a section where there is a random fact, you can delete this fact and request a new one. 
+  
