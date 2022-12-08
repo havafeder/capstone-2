@@ -8,16 +8,16 @@
   - A website.
   
 4. What goal will your project be designed to achieve?
-  - An easy and efficient way to create a todo list and learn new facts while doing it. 
+  - An easy and efficient way to create a todo list.
   
 5. What kind of users will visit your app?
-  - People who want to be productive and get things done and also love trivia. 
+  - People who want to be productive and could use a visual representative of their priorities. 
   
 6. What data do you plan on using? 
-  - I will be using data from the Facts API. 
+  - I plan on using my own data.
   
 7. Outline your approach to creating your project. 
-  - The database I am using will be for the trivia part of the website. 
-  - You will be able to sign into the website and have your todos saved. You will be able to delete and update todos.
-  - On the homepage there will be a section where there is a random fact, you can delete this fact and request a new one. 
+  - Users will be able to register and login.
+  - Users will be able to add, update, and delete todos. 
+ 
   
