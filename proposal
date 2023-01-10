@@ -11,13 +11,14 @@
   - An easy and efficient way to create a todo list.
   
 5. What kind of users will visit your app?
-  - People who want to be productive and could use a visual representative of their priorities. 
+  - People who want to be productive and could use a visual representative of their priorities. People who enjoy trivia. 
   
 6. What data do you plan on using? 
-  - I plan on using my own data.
+  - I plan on using my own data and the Facts API.
   
 7. Outline your approach to creating your project. 
   - Users will be able to register and login.
   - Users will be able to add, update, and delete todos. 
+  - There will be a new random fact at top of page each time user logs in.
  
   
