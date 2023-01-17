@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="btn edit"
+    data-target="#idundefined"
+    data-toggle="modal"
+    type="button"
+  >
+    edit
+  </button>
+  <div
+    class="modal"
+    id="idundefined"
+  >
+    <div
+      class="modal-dialog"
+    >
+      <div
+        class="modal-content"
+      >
+        <div
+          class="modal-header"
+        >
+          <h4
+            class="modal-title"
+          >
+            edit todo
+          </h4>
+          <button
+            class="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            ×
+          </button>
+        </div>
+        <div
+          class="modal-body"
+        >
+          <input
+            class="form-control"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="modal-footer"
+        >
+          <button
+            class="btn btn-warning"
+            data-dismiss="modal"
+            type="button"
+          >
+            edit
+          </button>
+        </div>
+        <div
+          class="modal-footer"
+        >
+          <button
+            class="btn btn-danger"
+            data-dismiss="modal"
+            type="button"
+          >
+            close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
