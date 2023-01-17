@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const pool = require('../db');
-const jwtGenerator = require('../utils/jwtGenerator');
+const jwtCreator = require('../utils/jwtCreator');
 const validInfo = require('../middleware/validInfo');
 const bcrypt = require('bcrypt');
 const authorization = require('../middleware/authorization');
@@ -36,7 +36,7 @@ router.post('/register', validInfo, async (req, res) => {
 
 		//generate jwt token
 
-		const token = jwtGenerator(newUser.rows[0].user_id);
+		const token = jwtCreator(newUser.rows[0].user_id);
 
 		res.json({token})
 
@@ -72,7 +72,7 @@ router.post('/login', validInfo, async (req, res) => {
 	
 		//give user jwt token
 
-		const token = jwtGenerator(user.rows[0].user_id);
+		const token = jwtCreator(user.rows[0].user_id);
 
 		res.json({ token });
 
