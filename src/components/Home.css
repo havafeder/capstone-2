@@ -1,0 +1,54 @@
+body {
+	font-family: 'Roboto Mono', monospace;
+	background-color: whitesmoke;
+	color: darkslategrey;
+}
+
+.btn {
+	background-color: darkseagreen;
+	border: darkseagreen;
+	color: white;
+}
+
+.delete {
+	background-color: salmon;
+	border: salmon;
+	color: white;
+}
+
+.edit {
+	background-color: lightyellow;
+	border: lightyellow;
+	color: darkslategrey;
+}
+
+.btn:hover {
+	background-color: darkslategrey;
+	border: darkslategrey;
+	color: white;
+}
+
+.logout {
+	background-color: salmon;
+	border: salmon;
+	color: white;
+}
+
+.add {
+	margin-left: 10px;
+	background-color: darkseagreen;
+	border: darkseagreen;
+	color: white;
+}
+
+.form-control {
+	background-color: whitesmoke;
+}
+
+input[type='checkbox']:checked + label {
+	text-decoration: line-through;
+}
+
+.cb {
+	margin: 10px;
+}
