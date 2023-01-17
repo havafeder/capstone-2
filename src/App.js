@@ -12,10 +12,10 @@ import {
 import Dashboard from './components/dashboard/Dashboard';
 import Login from './components/Login';
 import Register from './components/Register';
-import EditTodo from './components/dashboard/todolist/EditTodo';
-import InputTodo from './components/dashboard/todolist/EditTodo';
-import ListTodo from './components/dashboard/todolist/EditTodo';
-import Landing from './components/Landing';
+import TodoEdit from './components/dashboard/todolist/TodoEdit';
+import MakeTodo from './components/dashboard/todolist/MakeTodo';
+import TodoList from './components/dashboard/todolist/TodoList';
+import Home from './components/Home';
 
 function App() {
 
