@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import InputTodo from "./InputTodo";
+import MakeTodo from "./MakeTodo";
 import { MemoryRouter } from "react-router";
 
 it("matches snapshot", function () {
 	const { asFragment } = render(
 		<MemoryRouter>
-			<InputTodo />
+			<MakeTodo />
 		</MemoryRouter>,
 	);
 	expect(asFragment()).toMatchSnapshot();
