@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 
-const EditTodo = ({ todo, setTodosChange }) => {
+const TodoEdit = ({ todo, setTodosChange }) => {
 	//edit todo 
 	const editText = async (id) => {
 		try {
@@ -76,4 +76,4 @@ const EditTodo = ({ todo, setTodosChange }) => {
 	)
 }
 
-export default EditTodo;
+export default TodoEdit;
