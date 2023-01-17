@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import EditTodo from './EditTodo';
+import TodoEdit from './TodoEdit';
 
-const ListTodos = ({ allTodos, setTodosChange }) => {
+const TodoList = ({ allTodos, setTodosChange }) => {
 	//set state for todos
 	const [todos, setTodos] = useState([]);
 
@@ -39,7 +39,7 @@ const ListTodos = ({ allTodos, setTodosChange }) => {
 						todos.map(todo => (
 							<tr key={todo.todo_id}>
 								<td>{todo.description}</td>
-								<td><EditTodo todo={todo} setTodosChange={setTodosChange}/></td>
+								<td><TodoEdit todo={todo} setTodosChange={setTodosChange}/></td>
 								<td><button className='btn btn-danger' onClick={() => deleteTodo(todo.todo_id)}>delete</button></td>
 							</tr>
 						))
@@ -50,4 +50,4 @@ const ListTodos = ({ allTodos, setTodosChange }) => {
 	);
 };
 
-export default ListTodos;
+export default TodoList;
