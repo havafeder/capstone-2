@@ -31,7 +31,7 @@ router.post('/register', validInfo, async (req, res) => {
 		
 		//enter new user insidedatabase
 
-		const newUser = await pool.query('INSERT INTO users (username, user_email, user_password) VALUES ($1, $2, $3) RETURNING *',
+		const newUser = await pool.query('INSERT INTO users (username, user_email, user_password) VALUES ($1, $2, $3) RETURNING user_id',
 			[name, email, bcryptPassword]);
 
 		//generate jwt token
