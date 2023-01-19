@@ -43,7 +43,7 @@ router.put('/todos/:id', authorization, async (req, res) => {
 			[description, id, req.user.id]);
 		
 		if (updateTodo.rows.length === 0) {
-			return res.json('This todo is not yours');
+			return res.status(404).json('This todo is not yours');
 		} else {
 			return res.json('Todo was updated');
 		};
@@ -63,7 +63,7 @@ router.delete('/todos/:id', authorization, async (req, res) => {
 		);
 
 		if (deleteTodo.rows.length === 0) {
-			return res.json('This todo is not yours');
+			return res.status(404).json('This todo is not yours');
 		} else {
 			return res.json('Todo was deleted.')
 		};
