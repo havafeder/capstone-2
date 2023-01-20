@@ -7,6 +7,12 @@ describe('POST /register', () => {
 
 	describe('given username, email, password', () => {
 
+		afterEach(async () => {
+		await request(app).delete('/auth/delete').send({
+			email: 'test@gmail.com'
+			});
+		});
+		
 		it('should respond with a 200 status code', async () => {
 			const res = await request(app).post('/auth/register').send({
 				name: 'uuuu',
