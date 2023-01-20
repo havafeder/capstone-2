@@ -97,6 +97,22 @@ router.put('/edit', authorization, validInfo, async (req, res) => {
 	}
 });
 
+//delete user, ONLY USED FOR TESTING 
+router.delete('/delete', validInfo, async (req, res) => {
+	try {
+		const { email} = req.body;
+		const deleteUser = await pool.query('DELETE FROM users WHERE user_email = $1 RETURNING username, user_email',
+			[email])
+		if (deleteUser.rows.length === 0) {
+			return res.status(404).json('User not found');
+		} else {
+			res.json('User was deleted');
+		}
+	} catch (err) {
+		console.error(err.message);
+	}
+});
+
 //verify jwt token
 
 router.get('/is-verify', authorization,  async (req, res) => {
