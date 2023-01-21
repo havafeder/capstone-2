@@ -34,7 +34,7 @@ router.post('/todos', authorization, async (req, res) => {
 });
 
 //update a todo
-router.put('/todos/:id', authorization, async (req, res) => {
+router.put('/todos/:id', [check('id').trim().escape(), check('description').trim().escape()], authorization, async (req, res) => {
 	try {
 		const { id } = req.params;
 		const { description } = req.body;
