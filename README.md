@@ -1,4 +1,4 @@
-The name of my app is called 'TO-DO.' It is a website where users can create an account and build a to-do list. 
+The name of this app is 'TO-DO.' It is a website where users can create an account and build a to-do list. 
 
 - Users can update, delete, and cross off their todos and may add as many todos as they would like. There is a new random trivia fact displayed at the top of the page each 
 time the user logs in and each time the user refreshes the page. 
