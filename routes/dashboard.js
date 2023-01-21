@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const pool = require('../db');
 const authorization = require('../middleware/authorization');
+const {check, trim, escape } = require('express-validator')
 
 //get all todos and username of user
 router.get('/', authorization, async (req, res) => {
